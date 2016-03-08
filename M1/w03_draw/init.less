@@ -1,0 +1,118 @@
+@yellow: #fbd067;
+@blue: #1a6c9f;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+.hair {
+    top: 20px;
+    height: 40px;
+    width: 34px;
+}
+
+.arms {
+    width: 90px;
+    height: 24px;
+    background-color: #fbd067;
+    border: 4px solid #000;
+    top: 310px;
+}
+
+.atfl {
+    animation-timing-function: linear;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+}
+
+.glasses_stripes {
+    height: 32px;
+    width: 32px;
+    background-color: #000;
+    top: 75px;
+}
+
+.eyes {
+    height: 80px;
+    width: 80px;
+    border: 10px solid #cdcdcd;
+    border-radius: 50%;
+    background-color: #fff;
+    top: 40px;
+}
+
+.pupils {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    background-color: #000;
+    position: relative;
+    left: 24px;
+    .animation(pupil_black_move);
+    .atfl;
+    .pupil_white {
+        height: 16px;
+        width: 16px;
+        border-radius: 50%;
+        background-color: #fff;
+        position: relative;
+        .animation(pupil_white_move);
+        .atfl;
+    }
+}
+
+.trousers_stripes {
+    width: 90px;
+    height: 16px;
+    background-color: @blue;
+    border: 4px solid #000;
+    z-index: 2;
+    .transform-origin(0%, 50%);
+}
+
+.trousers_stripes_after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background-color: #000;
+    border-radius: 50%;
+    z-index: 2;
+    top: 4px;
+}
+
+.legs {
+    top: 458px;
+    height: 24px;
+    width: 32px;
+    border-left: 4px solid #000;
+    border-right: 4px solid #000;
+    background-color: @blue;
+}
+
+.s {
+    top: 480px;
+    height: 20px;
+    width: 60px;
+    background-color: #000;
+}
+
+.transform(@degree) when (isunit(@degree, deg)) {
+    transform: rotate(@degree);
+    -webkit-transform: rotate(@degree);
+    -moz-transform: rotate(@degree);
+    -ms-transform: rotate(@degree);
+}
+
+.transform-origin(@pct1, @pct2) when (ispercentage(@pct1)) and (ispercentage(@pct2)) {
+    transform-origin: @pct1 @pct2;
+    -webkit-transform-origin: @pct1 @pct2;
+    -moz-transform-origin: @pct1 @pct2;
+    -ms-transform-origin: @pct1 @pct2;
+}
+
+.animation(@ani_name) {
+    animation: @ani_name 8s infinite;
+    -webkit-animation: @ani_name 8s infinite;
+    -moz-animation: @ani_name 8s infinite;
+}
