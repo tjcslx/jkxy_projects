@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS标准盒模型及怪异盒模型</title>
+    <link rel="stylesheet" type="text/css" href="styles_box.css">
+</head>
+<body>
+<header>
+    <b>第一个div为怪异盒模型，第二个为标准盒模型，两个盒模型的宽度均为500像素，高120像素，内补10像素，边框5像素，第一个盒模型的实际宽度及高度应与设计宽度、高度相同，第二个的宽度/高度应为设计宽度/高度+内补+边框之和。</b><br/>
+    <b>通过JavaScript函数取两个div的实际宽度及高度进行验证。</b>
+</header>
+<div class="content">
+    <div id="odd_box">
+        现在有消息称，在烧毁的上千辆进口车中，大众损失惨重，具体明显为：甲壳虫391辆，迈特威770辆，UP84辆，高尔夫旅行版114辆，迈腾28辆，SportsVan39辆，Tiguan257辆，途锐1065辆，估计烧毁2748辆。现在有消息称，在烧毁的上千辆进口车中，大众损失惨重，具体明显为：甲壳虫391辆，迈特威770辆，UP84辆，高尔夫旅行版114辆，迈腾28辆，SportsVan39辆，Tiguan257辆，途锐1065辆，估计烧毁2748辆。现在有消息称，在烧毁的上千辆进口车中，大众损失惨重，具体明显为：甲壳虫391辆，迈特威770辆，UP84辆，高尔夫旅行版114辆，迈腾28辆，SportsVan39辆，Tiguan257辆，途锐1065辆，估计烧毁2748辆。
+    </div>
+    <hr/>
+    <div id="standard_box">
+        现在有消息称，在烧毁的上千辆进口车中，大众损失惨重，具体明显为：甲壳虫391辆，迈特威770辆，UP84辆，高尔夫旅行版114辆，迈腾28辆，SportsVan39辆，Tiguan257辆，途锐1065辆，估计烧毁2748辆。现在有消息称，在烧毁的上千辆进口车中，大众损失惨重，具体明显为：甲壳虫391辆，迈特威770辆，UP84辆，高尔夫旅行版114辆，迈腾28辆，SportsVan39辆，Tiguan257辆，途锐1065辆，估计烧毁2748辆。现在有消息称，在烧毁的上千辆进口车中，大众损失惨重，具体明显为：甲壳虫391辆，迈特威770辆，UP84辆，高尔夫旅行版114辆，迈腾28辆，SportsVan39辆，Tiguan257辆，途锐1065辆，估计烧毁2748辆。
+    </div>
+</div>
+<footer></footer>
+<script type="text/javascript">
+    alert('第一个元素的宽度为' + document.getElementById("odd_box").offsetWidth + '，高度为' + document.getElementById("odd_box").offsetHeight);
+    alert('第二个元素的宽度为' + document.getElementById("standard_box").offsetWidth + '，高度为' + document.getElementById("standard_box").offsetHeight);
+</script>
+</body>
+</html>

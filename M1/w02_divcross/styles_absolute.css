@@ -1,0 +1,60 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Set 5 div blocks' width, height, initiate their position by placing their base points to the middle of the page. */
+
+div[id^="div_"] {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+
+/* Place 5 div blocks to distinct positions by modifying their margin. */
+
+#div_side_left {
+    margin: -50px 0 0 -175px;
+    background-color: rgb(255, 0, 0);
+}
+
+#div_side_right {
+    margin: -50px 0 0 75px;
+    background-color: rgb(0, 255, 0);
+}
+
+#div_side_top {
+    margin: -175px 0 0 -50px;
+    background-color: rgb(0, 0, 255);
+}
+
+#div_side_bottom {
+    margin: 75px 0 0 -50px;
+    background-color: rgb(255, 255, 0);
+}
+
+#div_center {
+    margin: -50px 0 0 -50px;
+    display: table;
+    text-align: center;
+}
+
+
+/* Set left, right, top and bottom blocks' shadow, using attribute selector. */
+
+div[id^="div_side_"] {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+    -o-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+}
+
+#center_img {
+	display: table-cell;
+	vertical-align: middle;
+}

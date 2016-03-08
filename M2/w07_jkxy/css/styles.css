@@ -1,0 +1,1282 @@
+/*通用元素样式设置*/
+
+body,
+ul {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", Helvetica, arial, \5b8b\4f53, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+header .top,
+header nav,
+.container {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+header .top .member ul li,
+ul.left li,
+ul.right li {
+    display: inline;
+}
+
+.pro a h1,
+.knowledge a h1,
+.selected a h1,
+.wiki a h1,
+.ent a h1,
+.univ a h1,
+.reports a h1 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+img {
+    z-index: 1;
+}
+
+
+/*头部样式设置，包括顶部Logo、搜索框、登录菜单及下方用nav标签承载的两个菜单，其中顶部元素参照极客学院首页样式*/
+
+header {
+    min-height: 91px;
+    width: 100%;
+    padding: 10px 0 0 0;
+    border-bottom: 1px solid #bababa;
+}
+
+header .top {
+    position: relative;
+    height: 50px;
+}
+
+.top a img {
+    position: absolute;
+    float: left;
+    margin-top: 5px;
+}
+
+.top .search {
+    width: 380px;
+    height: 38px;
+    position: absolute;
+    left: 50%;
+    top: 6px;
+    margin-left: -190px;
+}
+
+.search form input {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    float: left;
+}
+
+.search form input[type=text] {
+    width: 308px;
+    height: 36px;
+    padding: 9px 0 9px 5px;
+    border: 1px solid #dfdfdf;
+}
+
+.search form input[type=submit] {
+    padding: 0;
+    width: 36px;
+    height: 36px;
+    color: #6d6d6d;
+    background: url(../img/topsearch.png) center center no-repeat;
+    border: 1px solid #dfdfdf;
+}
+
+.search form input[type=submit]:hover {
+    background-color: #34b14e;
+    color: #fff;
+}
+
+header .top .member {
+    position: absolute;
+    top: 16px;
+    right: 0;
+}
+
+.member ul {
+    text-align: right;
+}
+
+.member ul li:first-child,
+.member ul li:nth-child(2) {
+    border-right: 2px solid #000;
+}
+
+.member ul li {
+    padding: 0 10px 0 10px;
+    font-size: 12px;
+}
+
+header .gradient {
+    height: 2px;
+    background: -webkit-linear-gradient(left, #34b14e, #2f84c4);
+    background: -moz-linear-gradient(left, #34b14e, #2f84c4);
+}
+
+header nav {
+    height: 41px;
+}
+
+header nav ul {
+    display: inline-block;
+}
+
+header nav a {
+    line-height: 41px;
+}
+
+header nav ul.left {
+    font-size: 14px;
+    width: 60%;
+}
+
+ul.left li {
+    padding: 0 22px;
+}
+
+ul.left li:first-child {
+    padding: 0 22px 0 0;
+}
+
+ul.left li:last-child {
+    padding: 0 0 0 22px;
+}
+
+ul.right {
+    text-align: right;
+    font-size: 12px;
+    width: 39%;
+}
+
+
+/*正文部分样式设置：课程部分，包括菜单及课程选择框*/
+
+.container {
+    height: 3470px;
+}
+
+
+/*正文部分样式设置：右下方固定菜单*/
+
+.container .fixed {
+    position: fixed;
+    bottom: 34px;
+    right: 68px;
+    width: 34px;
+    height: 138px;
+}
+
+.fixed a span {
+    width: 34px;
+    display: block;
+    transition: background-image 0.2s ease-in;
+    -webkit-transition: background-image 0.2s ease-in;
+    -moz-transition: background-image 0.2s ease-in;
+    -o-transition: background-image 0.2s ease-in;
+    -ms-transition: background-image 0.2s ease-in;
+}
+
+.fixed a .back_top {
+    background: url("../img/fixed.jpg") 0 0 no-repeat;
+    background-size: 34px 102px;
+    height: 34px;
+}
+
+.fixed a .back_top:hover {
+    background: url("../img/fixed_hover.jpg") 0 0 no-repeat;
+    background-size: 34px 102px;
+}
+
+.fixed a .app {
+    position: relative;
+    background: #f7f7f7 url("../img/app.png") center center no-repeat;
+    background-size: 12px 24px;
+    height: 35px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.fixed a .app:hover {
+    background: #f7f7f7 url("../img/app2.png") center center no-repeat;
+    background-size: 12px 24px;
+}
+
+.fixed a .app img {
+    position: absolute;
+    left: -126px;
+    top: -70px;
+    display: none;
+    z-index: 100;
+}
+
+.fixed a .survey {
+    background: url("../img/fixed.jpg") 0 -68px no-repeat;
+    background-size: 34px 102px;
+    height: 34px;
+}
+
+.fixed a .survey:hover {
+    background: url("../img/fixed_hover.jpg") 0 -68px no-repeat;
+    background-size: 34px 102px;
+}
+
+.fixed a .chat {
+    background: #f7f7f7 url("../img/chat.png") center center no-repeat;
+    height: 35px;
+    border-top: 1px solid #e0e0e0;
+}
+
+
+/*正文部分样式设置：上部*/
+
+.container .top {
+    height: 307px;
+    margin: 20px 0;
+}
+
+.top .menu,
+.top .intro {
+    display: inline-block;
+    height: 303px;
+    float: left;
+    border: 1px solid #f5f5f5;
+}
+
+.top .menu,
+.top .intro {
+    width: 20%;
+}
+
+.top .menu {
+    border-top: 2px solid #35b558;
+    height: 247px;
+    transition: height 0.2s ease-in;
+    -webkit-transition: height 0.2s ease-in;
+    -moz-transition: height 0.2s ease-in;
+    -o-transition: height 0.2s ease-in;
+    -ms-transition: height 0.2s ease-in;
+}
+
+.menu:hover {
+    height: 340px;
+}
+
+.menu ul li {
+    padding: 0 15px;
+    border-bottom: 1px solid #f5f5f5;
+    border-left: 2px solid #f5f5f5;
+    font-size: 13px;
+    line-height: 37px;
+    color: #333;
+    background-color: #fff;
+    position: relative;
+    transition: border-left 0.2s ease-in;
+    -webkit-transition: border-left 0.2s ease-in;
+    -moz-transition: border-left 0.2s ease-in;
+    -o-transition: border-left 0.2s ease-in;
+    -ms-transition: border-left 0.2s ease-in;
+}
+
+.menu ul li.hide {
+    display: none;
+}
+
+.menu ul li:hover {
+    border-left: 2px solid #35b558;
+}
+
+.menu ul li a span {
+    display: inline-block;
+    float: right;
+}
+
+.menu ul li div[class^=ms] {
+    position: absolute;
+    width: 400px;
+    min-height: 341px;
+    border: 1px solid #f5f5f5;
+    left: 218px;
+    top: -1px;
+    display: none;
+    background-color: #fff;
+    z-index: 100;
+}
+
+.menu ul li div[class^=ms].active {
+    display: block;
+}
+
+.menu ul li div[class^=ms] dl {
+    margin: 0 0 0 10px;
+    font-size: 13px;
+}
+
+.menu ul li div[class^=ms] dl dt,
+.menu ul li div[class^=ms] dl dd {
+    margin: 0;
+}
+
+.menu ul li div[class^=ms] dl dt {
+    height: 31px;
+}
+
+.menu ul li div[class^=ms] dl dd a {
+    display: inline;
+    line-height: 31px;
+    margin: 4px 0 10px 0;
+    padding: 0 7px;
+    color: #666;
+    font-size: 12px;
+    border-left: 1px solid #f5f5f5;
+    white-space: nowrap;
+    transition: color 0.2s ease-in;
+    -webkit-transition: color 0.2s ease-in;
+    -moz-transition: color 0.2s ease-in;
+    -o-transition: color 0.2s ease-in;
+    -ms-transition: color 0.2s ease-in;
+}
+
+.menu ul li div[class^=ms] dl dd a:hover {
+    color: #35b558;
+}
+
+.top .jcarousel-wrapper {
+    display: inline-block;
+    float: left;
+    border: 1px solid #f5f5f5;
+}
+
+.top .intro .it,
+.top .intro .ib {
+    height: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.top .intro .it {
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.top .intro h2 {
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+.intro ul {
+    margin: 0 0 10px 0;
+    min-height: 16px;
+}
+
+.intro ul li {
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: #35b558;
+    display: inline-block;
+}
+
+.intro ul li a {
+    color: #35b558;
+}
+
+.intro .it ul li {
+    width: 30%;
+    border-right: 1px solid #35b558;
+}
+
+.intro .it ul li:last-child {
+    border-width: 0;
+}
+
+.intro .ib ul li {
+    width: 48%;
+}
+
+.intro .ib ul li a:before {
+    content: "√";
+}
+
+.intro button {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 34px;
+    line-height: 30px;
+    font-size: 14px;
+    cursor: pointer;
+    border: 1px solid #35b558;
+    outline: 0;
+    transition: color 0.2s ease-in, background-color 0.2s ease-in;
+    -webkit-transition: color 0.2s ease-in, background-color 0.2s ease-in;
+    -moz-transition: color 0.2s ease-in, background-color 0.2s ease-in;
+    -o-transition: color 0.2s ease-in, background-color 0.2s ease-in;
+    -ms-transition: color 0.2s ease-in, background-color 0.2s ease-in;
+}
+
+.intro .it button {
+    color: #fff;
+    background-color: #7bda95;
+}
+
+.intro .ib button {
+    color: #35b558;
+    background-color: #fff;
+}
+
+.intro .it button:hover,
+.intro .ib button:hover {
+    background-color: #35b558;
+}
+
+.intro .ib button:hover {
+    color: #fff;
+}
+
+
+/*正文部分样式设置：课程部分*/
+
+.container .courses {
+    height: 580px;
+}
+
+.courses ul.cm {
+    padding: 10px 0;
+    height: 41px;
+    margin-top: 30px;
+}
+
+.cm li {
+    float: left;
+    line-height: 41px;
+    font-size: 14px;
+    width: 16.66%;
+    text-align: center;
+    cursor: pointer;
+    border-bottom: 2px solid #d1d1d1;
+    transition: border-bottom 0.2s ease-in, background-image 0.2s ease-in, color 0.2s ease-in;
+    -webkit-transition: border-bottom 0.2s ease-in, background-image 0.2s ease-in, color 0.2s ease-in;
+    -moz-transition: border-bottom 0.2s ease-in, background-image 0.2s ease-in, color 0.2s ease-in;
+    -o-transition: border-bottom 0.2s ease-in, background-image 0.2s ease-in, color 0.2s ease-in;
+}
+
+.cm li.active {
+    color: #35b558;
+    border-bottom: 2px solid #35b558;
+    background: url(../img/index-sj_cc73747.png) center bottom no-repeat;
+}
+
+.cb {
+    margin-top: 20px;
+}
+
+.cb .recommend,
+.cb .latest,
+.cb .free,
+.cb .projects,
+.cb .premiere,
+.cb .enterprise {
+    display: none;
+}
+
+.recommend .rc,
+.latest .lc,
+.free .fc,
+.projects .pc,
+.premiere .prc,
+.enterprise .ec {
+    height: 220px;
+    width: 235px;
+    margin: 20px 16px 0 16px;
+    border: 1px solid #e4e4e4;
+    float: left;
+}
+
+.recommend .rc a h2,
+.latest .lc a h2,
+.free .fc a h2,
+.projects .pc a h2,
+.premiere .prc a h2,
+.enterprise .ec a h2,
+.wiki .wiki_contents a h2 {
+    font-size: 14px;
+    margin: 5px 0 0 8px;
+    font-weight: normal;
+}
+
+.recommend .rc a i,
+.latest .lc a i,
+.free .fc a i,
+.projects .pc a i,
+.premiere .prc a i,
+.enterprise .ec a i {
+    background: url(../img/clock.png) 0 0 no-repeat;
+    background-size: 14px 14px;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    margin-left: 8px;
+}
+
+.recommend .rc a span,
+.latest .lc a span,
+.free .fc a span,
+.projects .pc a span,
+.premiere .prc a span,
+.enterprise .ec a span,
+.wiki .wiki_contents .wci a span {
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.cb section.active {
+    display: block;
+}
+
+.recommend .rc a img,
+.latest .lc a img,
+.free .fc a img,
+.projects .pc a img,
+.premiere .prc a img,
+.enterprise .ec a img {
+    width: 235px;
+    height: 130px;
+}
+
+
+/*正文部分样式设置：职业路径图*/
+
+.pro {
+    height: 645px;
+}
+
+.pro div.disable,
+.pro_contents a button.disable {
+    cursor: not-allowed;
+}
+
+.pro .pro_contents {
+    width: 198px;
+    height: 298px;
+    border-width: 1px 1px 0 0;
+    border-style: solid;
+    border-color: #e4e4e4;
+    float: left;
+}
+
+.pro .pro_contents:nth-child(2),
+.pro .pro_contents:nth-child(7) {
+    margin-left: 37px;
+    border-left-width: 1px;
+}
+
+.pro .pro_contents:nth-child(6),
+.pro .pro_contents:last-child {
+    margin-right: 37px;
+}
+
+.pro .pro_contents:nth-child(7),
+.pro .pro_contents:nth-child(8),
+.pro .pro_contents:nth-child(9),
+.pro .pro_contents:nth-child(10),
+.pro .pro_contents:last-child {
+    border-bottom-width: 1px;
+}
+
+.pro .pro_contents a img,
+.pro .pro_contents img {
+    width: 198px;
+    height: 120px;
+    display: block;
+    margin: 0 auto 24px auto;
+}
+
+.pro_contents a h2,
+.pro_contents h2 {
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+}
+
+.pro_contents a span,
+.pro_contents span {
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    display: block;
+}
+
+.pro_contents a button,
+.pro_contents button {
+    width: 140px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    display: block;
+    margin: 20px auto 0 auto;
+    cursor: pointer;
+    outline: 0;
+    font-size: 16px;
+    transition: background-color 0.5s ease-in;
+    -webkit-transition: background-color 0.5s ease-in;
+    -moz-transition: background-color 0.5s ease-in;
+    -o-transition: background-color 0.5s ease-in;
+}
+
+.pro_contents a button.active {
+    color: #35b558;
+    background-color: #f3fff6;
+    border: 1px solid #35b558;
+}
+
+.pro_contents a button.active:hover {
+    color: #fff;
+    background-color: #35b558;
+    border: 1px solid #35b558;
+}
+
+.pro_contents button.disable {
+    color: #808080;
+    background-color: #f5f5f5;
+    border: 1px solid #e4e4e4;
+}
+
+
+/*正文部分样式设置：知识体系图*/
+
+.knowledge {
+    width: 100%;
+    height: 529px;
+}
+
+.knowledge .kc {
+    width: 166px;
+    height: 119px;
+    border-width: 1px 1px 0 0;
+    border-style: solid;
+    border-color: #e4e4e4;
+    float: left;
+}
+
+.kc:nth-child(2),
+.kc:nth-child(8),
+.kc:nth-child(14),
+.kc:nth-child(20) {
+    margin-left: 35px;
+    border-left-width: 1px;
+}
+
+.kc:nth-child(7),
+.kc:nth-child(13),
+.kc:nth-child(19),
+.kc:last-child {
+    margin-right: 35px;
+}
+
+.kc:nth-child(20),
+.kc:nth-child(21),
+.kc:nth-child(22),
+.kc:nth-child(23),
+.kc:nth-child(24),
+.kc:last-child {
+    border-bottom-width: 1px;
+}
+
+.kc a img {
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin: 15px auto 5px auto;
+}
+
+.kc a span {
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    line-height: 15px;
+    margin-bottom: 5px;
+}
+
+.kc {
+    position: relative;
+}
+
+.transform {
+    transform: rotateY(90deg);
+    -webkit-transform: rotateY(90deg);
+    -moz-transform: rotateY(90deg);
+    -o-transform: rotateY(90deg);
+    -ms-transform: rotateY(90deg);
+}
+
+.kc a .front,
+.kc a .rear {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.kc a .front {
+    z-index: 2;
+}
+
+.kc a .front span:nth-child(3) {
+    font-size: 14px;
+    line-height: 14px;
+    color: #35b558;
+}
+
+.kc a .rear {
+    background-color: #f5f5f5;
+    transform: rotateY(-90deg);
+    -webkit-transform: rotateY(-90deg);
+    -moz-transform: rotateY(-90deg);
+    -o-transform: rotateY(-90deg);
+    -ms-transform: rotateY(-90deg);
+}
+
+.kc a .rear span {
+    font-size: 14px;
+    line-height: 14px;
+    margin: 30px 0 19px 0;
+}
+
+.kc a .rear button {
+    background-color: #35b558;
+    width: 140px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    display: block;
+    margin: 20px auto 0 auto;
+    cursor: pointer;
+    outline: 0;
+    font-size: 16px;
+    color: #fff;
+    border: 1px solid #35b558;
+    transition: background-color 0.5s ease-in;
+    -webkit-transition: background-color 0.5s ease-in;
+    -moz-transition: background-color 0.5s ease-in;
+    -o-transition: background-color 0.5s ease-in;
+}
+
+.kc a .rear button:hover {
+    background-color: #63cf76;
+}
+
+
+/*正文部分样式设置：精品系列课程*/
+
+.selected {
+    width: 100%;
+    height: 305px;
+}
+
+.selected .sc {
+    width: 201px;
+    height: 227px;
+    padding: 16px;
+    border: 1px solid #e4e4e4;
+    float: left;
+    cursor: pointer;
+    position: relative;
+}
+
+.sc:nth-child(2) {
+    margin-left: 39px;
+}
+
+.sc:nth-child(3),
+.sc:nth-child(4),
+.sc:last-child {
+    margin-left: 20px;
+}
+
+.sc .rear,
+.sc .front {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+}
+
+.sc h2 {
+    font-size: 15px;
+    line-height: 18px;
+    text-align: left;
+    font-weight: normal;
+}
+
+.sc .rear {
+    transition: opacity 0.2s ease-in;
+    -webkit-transition: opacity 0.2s ease-in;
+    -moz-transition: opacity 0.2s ease-in;
+    -o-transition: opacity 0.2s ease-in;
+    -ms-transition: opacity 0.2s ease-in;
+}
+
+.sc .rear img {
+    width: 201px;
+    height: 160px;
+}
+
+.sc span,
+.sc .rear button {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 12px;
+}
+
+.sc span {
+    margin-right: 6px;
+}
+
+.sc .rear button {
+    width: 56px;
+    height: 20px;
+    color: #fff;
+    border-radius: 3px;
+    background-color: #35b558;
+    border: 1px solid #35b558;
+    float: right;
+    margin-right: 16px;
+    transition: background-color 0.2s ease-in, border-color 0.2s ease-in;
+    -webkit-transition: background-color 0.2s ease-in, border-color 0.2s ease-in;
+    -moz-transition: background-color 0.2s ease-in, border-color 0.2s ease-in;
+    -o-transition: background-color 0.2s ease-in, border-color 0.2s ease-in;
+    -ms-transition: background-color 0.2s ease-in, border-color 0.2s ease-in;
+}
+
+.sc .front {
+    width: 201px;
+    height: 201px;
+    display: none;
+}
+
+.sc .front img {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.sc .front span {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    line-height: 12px;
+    margin: 5px 0 10px 0;
+    transition: color 0.2s ease-in;
+    -webkit-transition: color 0.2s ease-in;
+    -moz-transition: color 0.2s ease-in;
+    -o-transition: color 0.2s ease-in;
+}
+
+.sc .front span:hover {
+    color: #35b558;
+}
+
+.sc .front button {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: 28px;
+    font-size: 14px;
+    line-height: 14px;
+    color: #fff;
+    border-radius: 3px;
+    background-color: #35b558;
+    border: 1px solid #35b558;
+    transition: background-color 0.2s ease-in, border-color 0.2s ease-in;
+    -webkit-transition: background-color 0.2s ease-in, border-color 0.2s ease-in;
+    -moz-transition: background-color 0.2s ease-in, border-color 0.2s ease-in;
+    -o-transition: background-color 0.2s ease-in, border-color 0.2s ease-in;
+    -ms-transition: background-color 0.2s ease-in, border-color 0.2s ease-in;
+}
+
+.sc .rear button:hover,
+.sc .front button:hover {
+    background-color: #66d178;
+    border-color: #66d178;
+}
+
+.transparent {
+    opacity: 0.5;
+}
+
+
+/*正文部分样式设置：Wiki*/
+
+.wiki {
+    width: 100%;
+    height: 412px;
+}
+
+.wiki .wiki_contents {
+    width: 301px;
+    height: 338px;
+    float: left;
+    border: 1px solid #e3e3e3;
+    padding: 16px;
+    transition: border-color 0.2s ease-in;
+    -webkit-transition: border-color 0.2s ease-in;
+    -moz-transition: border-color 0.2s ease-in;
+    -o-transition: border-color 0.2s ease-in;
+    -ms-transition: border-color 0.2s ease-in;
+}
+
+.wiki .wiki_contents:hover {
+    border: 1px solid #35b558;
+}
+
+.wiki .wiki_contents:nth-child(2) {
+    margin-left: 37px;
+}
+
+.wiki .wiki_contents .wci,
+.wiki .wiki_contents .wci a img {
+    width: 142px;
+    height: 200px;
+    background-color: #818181;
+    border-radius: 2px;
+}
+
+.wiki .wiki_contents .wci {
+    display: inline-block;
+}
+
+.wiki .wiki_contents .wci:nth-child(3) {
+    float: right;
+}
+
+.wiki .wiki_contents .wci a img {
+    transition: width 0.5s ease;
+    -webkit-transition: width 0.5s ease;
+    -moz-transition: width 0.5s ease;
+    -o-transition: width 0.5s ease;
+}
+
+.wiki .wiki_contents .wci a img:hover {
+    width: 132px;
+}
+
+.wiki .wiki_contents .wci a span {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin: 4px 0;
+}
+
+.wiki .wiki_contents a.noimg {
+    display: block;
+    width: 100%;
+}
+
+.wiki .wiki_contents a.noimg span {
+    display: inline-block;
+    text-align: left;
+    font-size: 12px;
+    line-height: 12px;
+    margin: 6px 0;
+}
+
+.wiki .wiki_contents a.noimg span:last-child {
+    float: right;
+}
+
+
+/*正文部分样式设置：战略合作企业、合作院校及媒体报道*/
+
+.ent,
+.univ,
+.reports {
+    width: 100%;
+}
+
+.ent .jcarousel-wrapper,
+.univ .jcarousel-wrapper,
+.reports .jcarousel-wrapper {
+    border: 1px solid #e4e4e4;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.ent .jcarousel-wrapper,
+.reports .jcarousel-wrapper {
+    width: 1000px;
+    height: 48px;
+}
+
+.univ .jcarousel-wrapper {
+    width: 1000px;
+    height: 110px;
+}
+
+.ent .jcarousel-wrapper img,
+.univ .jcarousel-wrapper img,
+.reports .jcarousel-wrapper img {
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.ent .jcarousel-wrapper img,
+.reports .jcarousel-wrapper img {
+    width: 150px;
+    height: 50px;
+}
+
+.univ .jcarousel-wrapper img {
+    width: 110px;
+    height: 110px;
+}
+
+.ent .jcarousel-wrapper .jcarousel-control-prev,
+.ent .jcarousel-wrapper .jcarousel-control-next,
+.reports .jcarousel-wrapper .jcarousel-control-prev,
+.reports .jcarousel-wrapper .jcarousel-control-next {
+    top: 30px;
+}
+
+.ent .jcarousel-wrapper .jcarousel-control-prev,
+.univ .jcarousel-wrapper .jcarousel-control-prev,
+.reports .jcarousel-wrapper .jcarousel-control-prev {
+    left: 10px;
+}
+
+.ent .jcarousel-wrapper .jcarousel-control-next,
+.univ .jcarousel-wrapper .jcarousel-control-next,
+.reports .jcarousel-wrapper .jcarousel-control-next {
+    right: 10px;
+}
+
+.univ .jcarousel-wrapper .jcarousel-control-prev,
+.univ .jcarousel-wrapper .jcarousel-control-next {
+    top: 61px;
+}
+
+
+/*底部样式设置，包括联系方式及最下方的ICP备案信息*/
+
+footer {
+    width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer .bottom {
+    height: 251px;
+    border-width: 1px 0 1px 0;
+    border-style: solid;
+    border-color: #e4e4e4;
+    background-color: #fafafa;
+}
+
+.bottom .bc {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.bc dl,
+.bcr {
+    display: inline-block;
+}
+
+.bc dl {
+    float: left;
+    width: 185px;
+    padding-left: 30px;
+    margin: 25px 0;
+    border-left: 1px solid #e4e4e4;
+    min-height: 175px;
+}
+
+.bc dl dt,
+.bc dl dd {
+    color: #999;
+    text-align: left;
+    transition: color 0.2s ease-in;
+    -webkit-transition: color 0.2s ease-in;
+    -moz-transition: color 0.2s ease-in;
+    -o-transition: color 0.2s ease-in;
+    -ms-transition: color 0.2s ease-in;
+}
+
+.bc dl dt a:hover,
+.bc dl dd a:hover {
+    color: #35b558;
+}
+
+.bc dl dt {
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 500;
+    padding-left: 5px;
+}
+
+.bc dl dd {
+    font-size: 12px;
+    line-height: 12px;
+    margin: 10px 0 0 0;
+}
+
+.bc dl dd:before {
+    content: "·";
+}
+
+.bc a {
+    color: #999;
+}
+
+.bcr {
+    display: inline-block;
+    min-height: 226px;
+    border-left: 1px solid #e4e4e4;
+    padding: 20px 0 0 18px;
+}
+
+.bcr span {
+    font-size: 15px;
+    line-height: 15px;
+    color: #35b558;
+    display: block;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.bcr .app a img {
+    float: left;
+    margin-right: 15px;
+}
+
+.bcr .app a span {
+    font-size: 18px;
+    line-height: 18px;
+    color: #666;
+    margin-bottom: 8px;
+    font-weight: bold;
+    text-align: left;
+    transition: color 0.2s ease-in;
+    -webkit-transition: color 0.2s ease-in;
+    -moz-transition: color 0.2s ease-in;
+    -o-transition: color 0.2s ease-in;
+    -ms-transition: color 0.2s ease-in;
+}
+
+.bcr .app a span:last-child {
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: normal;
+}
+
+.bcr .app a span:hover {
+    color: #35b558;
+}
+
+.bcr .share {
+    margin-top: 15px;
+    height: 32px;
+}
+
+.bcr .share a {
+    display: inline-block;
+    padding-left: 5px;
+    margin-right: 10px;
+    width: 25px;
+    height: 32px;
+    float: left;
+    transition: background-position 0.2s ease-in;
+    -webkit-transition: background-position 0.2s ease-in;
+    -moz-transition: background-position 0.2s ease-in;
+    -o-transition: background-position 0.2s ease-in;
+    -ms-transition: background-position 0.2s ease-in;
+}
+
+.share a.weibo {
+    background: url("../img/sprites.png") -23px 0 no-repeat;
+}
+
+.share a.weibo:hover {
+    background-position: -23px -40px;
+}
+
+.share a.tieba {
+    background: url("../img/sprites.png") -145px 0 no-repeat;
+}
+
+.share a.tieba:hover {
+    background-position: -145px -40px;
+}
+
+.share a.wechat {
+    background: url("../img/sprites.png") -23px -82px no-repeat;
+    position: relative;
+}
+
+.share a.wechat img {
+    position: absolute;
+    bottom: 32px;
+    left: -48px;
+    display: none;
+}
+
+footer .bcr .service {
+    margin-top: 15px;
+    padding-left: 35px;
+}
+
+.service a .s {
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin-left: -40px;
+    background: url("../img/services.png") no-repeat 0 0/80px 40px;
+}
+
+.service a span {
+    color: #666;
+    font-size: 12px;
+    margin-bottom: 2px;
+    line-height: 22px;
+    padding-left: 5px;
+    text-align: left;
+    transition: color 0.2s ease-in;
+    -webkit-transition: color 0.2s ease-in;
+    -moz-transition: color 0.2s ease-in;
+    -o-transition: color 0.2s ease-in;
+    -ms-transition: color 0.2s ease-in;
+}
+
+.service a span:hover {
+    color: #35b558;
+}
+
+footer .copyright span,
+footer .copyright a span {
+    text-align: center;
+    font-size: 12px;
+    line-height: 12px;
+    padding: 20px;
+    color: #999;
+}
+
+.copyright a span:hover {
+    color: #35b558;
+}

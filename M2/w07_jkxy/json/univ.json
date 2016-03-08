@@ -1,0 +1,56 @@
+{
+    "items": [
+        {
+            "src": "img/univ001.png",
+            "title": "Image 1"
+        },
+        {
+            "src": "img/univ002.png",
+            "title": "Image 2"
+        },
+        {
+            "src": "img/univ003.png",
+            "title": "Image 3"
+        },
+        {
+            "src": "img/univ004.png",
+            "title": "Image 4"
+        },
+        {
+            "src": "img/univ005.png",
+            "title": "Image 5"
+        },
+        {
+            "src": "img/univ006.png",
+            "title": "Image 6"
+        },
+        {
+            "src": "img/univ007.png",
+            "title": "Image 7"
+        },
+        {
+            "src": "img/univ008.png",
+            "title": "Image 8"
+        },
+        {
+            "src": "img/univ009.png",
+            "title": "Image 9"
+        },
+        {
+            "src": "img/univ010.png",
+            "title": "Image 10"
+        },
+        {
+            "src": "img/univ011.png",
+            "title": "Image 11"
+        },
+        {
+            "src": "img/univ012.png",
+            "title": "Image 12"
+        },
+        {
+            "src": "img/univ013.png",
+            "title": "Image 13"
+        }
+    ]
+}

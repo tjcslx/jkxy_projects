@@ -1,0 +1,36 @@
+// 通用样式设置
+body {
+    .reset;
+    font-family: "SimSun";
+}
+
+span,
+li {
+    display: inline-block;
+}
+
+// 变量
+@fontsize: 16px;
+
+// mixins
+.reset {
+    margin: 0;
+    padding: 0;
+}
+
+.margin(@top: 0px, @right: 0px, @bottom: 0px, @left: 0px) when (ispixel(@top)) and (ispixel(@right)) and (ispixel(@bottom)) and (ispixel(@left)) {
+    margin: @top @right @bottom @left;
+}
+
+.h(@height) when (ispixel(@height)) {
+    height: @height;
+}
+
+.w(@width) when (ispixel(@width)) {
+    width: @width;
+}
+
+.hw(@height, @width) when (ispixel(@height)) and (ispixel(@width)) {
+    height: @height;
+    width: @width;
+}

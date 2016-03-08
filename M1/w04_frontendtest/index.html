@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>HTML+CSS初级前端面试题</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div>
+        <ul>
+            <li>
+                <h3>如何理解HTML的语义化？</h3>
+                <p>HTML的语义化，即根据内容的结构化（内容语义化），选择合适的标签，以便于开发者阅读和写出更优雅的代码的同时，让浏览器的爬虫和机器很好地解析。语义化目的在于：在没有CSS的情况下，页面也能呈现出很好地内容结构、代码结构，例如HTML 5新增的header、footer、article等标签替换div class=""方式；提高用户体验，例如title、alt用于解释名词或解释图片信息；有利于
+                    <abbr title="Search Engine Optimization">SEO</abbr>，搜索引擎爬虫依赖于标签来确定上下文和各个关键字的权重，语义化有助于爬虫抓取更多的有效信息；方便其他设备解析（如屏幕阅读器、盲人阅读器、移动设备）以语义的方式来渲染网页；便于团队开发和维护，语义化更具可读性，减少差异化。</p>
+            </li>
+            <li>
+                <h3>Doctype以及其中DTD的含义是什么？</h3>
+                <p>
+                    <abbr title="Document Type">Doctype</abbr>即文档类型，用来说明使用的XHTML或者HTML是什么版本，
+                    <abbr title="Document Type Definition">DTD</abbr>即文档类型定义，里面包含了文档的规则，浏览器就根据定义的DTD来解释你页面的标识，并展现出来。</p>
+            </li>
+            <li>
+                <h3>Doctype中的严格模式及过渡模式有什么区别？HTML 5中如何设置Doctype？</h3>
+                <p>XHTML 1.0提供了三种DTD声明可供选择：过渡的(Transitional)——要求非常宽松的DTD，它允许你继续使用HTML4.01的标识，但是要符合xhtml的写法，在Emmet中使用<strong>html:xt</strong>创建过渡文档的框架；严格的(Strict)——要求严格的DTD，不能使用任何表现层的标识和属性，例如<pre>&lt;br/&gt;</pre>，在Emmet中使用<strong>html:4s</strong>创建严格文档的框架；框架的(Frameset)——专门针对框架页面设计使用的DTD，如果你的页面中包含有框架如iframe，需要采用这种DTD；HTML 5中设置的Doctype为：<pre>&lt;!DOCTYPE HTML&gt;</pre>，在Emmet中使用<strong>html:5</strong>或<strong>!</strong>创建框架。</p>
+            </li>
+            <li>
+                <h3>HTML中的行内元素及块级元素各自的含义是什么？常用的分别有哪些？</h3>
+                <p>行内元素不可以设置宽度和高度，其宽度由内容的长度决定，高度一般由元素内部的字体大小决定，可以与其他行内元素位于同一行，行内元素内一般不可以包含块级元素；块级元素可以设置宽度和高度，不能与其他元素位于同一行，一般是其他元素的容器，可容纳块级元素和行内元素；常用的行内元素包括：a、span、img、input、label、select、strong、textarea，常用的块级元素包括：div、h1~h6、dl、ul、ol；行内元素及块级元素可通过CSS中的display: inline以及display: block进行设置。</p>
+            </li>
+            <li>
+                <h3>简述CSS的盒模型，传统盒模型及怪异盒模型。</h3>
+                <p>CSS盒模型规定了元素框处理元素内容、内边距、边框和外边距的方式：元素框的最内部分是实际的内容，直接包围内容的是内边距padding。内边距呈现了元素的背景；内边距的边缘是边框border。边框以外是外边距margin。传统盒模型中，元素框的宽度及高度为：width/height+padding+border-width+margin，通过CSS的<pre>box-sizing: content-box;</pre>进行设置（需浏览器前缀）；怪异盒模型的宽度及高度为width/height，与padding、border-width以及margin无关，通过CSS的<pre>box-sizing: border-box;</pre>进行设置（需浏览器前缀）。</p>
+            </li>
+            <li>
+                <h3>HTML引入CSS的方式有哪几种</h3>
+                <ol>
+                    <li>行内引入，在需要引入样式的标签中增加style属性，如：<pre>&lt;div style="width: 100px; height: 100px;"&gt;测试DIV&lt;div&gt;</pre></li>
+                    <li>内嵌引入，在head标签中增加style属性，如：<pre>&lt;head&gt;<br/>  &lt;style&gt;<br/>    div{width: 100px;<br/>    height: 100px;}<br/>  &lt;/style&gt;<br/>&lt;/head&gt;<br/>&lt;body&gt;<br/>  &lt;div&gt;&lt;/div&gt;<br/>&lt;/body&gt;</pre></li>
+                    <li>导入，将一个独立的.css文件使用@import引入HTML文件中，例如：<pre><pre>&lt;head&gt;<br/>  @import "styles.css"<br/>&lt;/head&gt;</pre></li>
+                    <li>链接，将一个独立的.css文件使用link引入HTML文件中，例如：<pre><pre>&lt;head&gt;<br/>  &lt;link rel="stylesheet" href="styles.css" /&gt;<br/>&lt;/head&gt;</pre>，在HTML 5中不需要type="text/css"。链接与导入的区别在于：链接会在网页主体装载之前装载CSS样式，这样装载出来的网页主体是带样式的；而导入在网页主体装载之后装载CSS样式，这样装载出来的网页主体存在一段时间不带样式。</li>
+                </ol>
+            </li>
+            <li>
+                <h3>常见浏览器的内核分别是什么？针对这些内核如何在CSS中配置浏览器前缀？</h3>
+                <p>
+                    <abbr title="Internet Explorer">IE</abbr>浏览器的内核为Trident，对应前缀为-ms，Chrome及Safari浏览器的内核是Webkit，前缀为-webkit；Firefox浏览器的内核是Gecko，前缀为-moz；Opera浏览器原来的内核是Presto，前缀为-o，现在是Webkit。</p>
+            </li>
+            <li>
+                <h3>CSS选择器有哪些？其各自的优先级都是什么？</h3>
+                <p>标签选择器（如head）、类选择器（如.class）含伪类选择器，以及id选择器（如#id），id选择器的优先级最高，类选择器次之，标签选择器最低。</p>
+            </li>
+            <li>
+                <h3>CSS Sprites的含义以及如何使用？</h3>
+                <p>把很多小的图片整合到一张大的图片上，以减轻服务器对图片的请求数量；在CSS中将background-image设置为整合后的图片，并与height以及background-position配合使用；除了手工合并之外，还可以使用Node中的sprity插件合并图片。</p>
+            </li>
+            <h3>CSS Hack针对IE不同版本的兼容标记分别为什么？还可使用什么方法进行IE兼容性的标记？</h3>
+            <p>将兼容性标记放置在CSS属性之前，IE 6为_，IE 7为+，IE 8为\0，IE 6-8为\9，此外IE 7的标记还包括在属性后面添加!important标记，该标记IE 6无法识别；除了属性前缀之外，还可以使用选择器前缀，如<pre>*html {}</pre>，或者条件注释前缀，例如：<pre>&lt;!--[if IE]&gt;<br/>  这段文字只在IE浏览器显示<br/>&lt;![endif]--&gt;</pre>其中lt为低于指定版本，lte为低于或等于指定版本，gt为高于指定版本，gte为高于或等于指定版本，!为不是指定版本；</p>
+            </li>
+            <li>
+                <h3>写出几种你遇到过的IE 6 BUG的现象及其解决方法。</h3>
+                <ol>
+                    <li>浮动元素与非浮动元素之间默认存在3像素的外边距，解决方法为在浮动元素中增加_margin-right: -3px（左浮动）；</li>
+                    <li>ul标签创建的导航条中各个项目呈现阶梯形，在而不是一行显示，解决方法为在ul li标签增加浮动属性或设置为行内元素；</li>
+                    <li>块级元素设置为浮动后，距离其浮动方向一侧的外边距是设置值的两倍，解决方法是将块级元素设置为行内元素；</li>
+                    <li>无法使用height设置小于字体高度的高度，解决方法是增加<pre>overflow: hidden;</pre>属性；</li>
+                    <li>当父元素使用<pre>overflow: auto;</pre>属性并在其中加入子元素后，子元素跨出边界，解决方法是为父元素设置<pre>position: relative;</pre>属性；</li>
+                    <li>ul标签创建的带链接列表中存在空行，解决方法是将li设置为行内元素，或设置a元素的高度。</li>
+                </ol>
+            </li>
+            <li>
+                <h3>在margin和padding属性中，两个、三个及四个参数分别依次指的是哪两个、三个和四个边的边距？</h3>
+                <p>两个参数的次序为：上下边距、左右边距，三个参数的次序为：上边距、左右边距、下边距，四个参数的次序为：上边距、右边距、下边距及左边距。</p>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

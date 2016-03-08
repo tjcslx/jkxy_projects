@@ -1,0 +1,26 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial;
+}
+
+.multicols1 {
+    border: 5px solid rgb(220, 20, 60);
+    padding: 10px;
+    width: 600px;
+    -webkit-columns: 150px 3;
+    -moz-columns: 150px 3;
+    column-rule: 2px solid rgb(220, 20, 60);
+    -webkit-column-rule: 2px solid rgb(220, 20, 60);
+    -moz-column-rule: 2px solid rgb(220, 20, 60);
+}
+
+.multicols2 {
+    border: 5px solid rgb(0, 0, 128);
+    padding: 10px;
+    -webkit-columns: 150px;
+    -moz-columns: 150px;
+    column-rule: 2px solid rgb(0, 0, 128);
+    -webkit-column-rule: 2px solid rgb(0, 0, 128);
+    -moz-column-rule: 2px solid rgb(0, 0, 128);
+}

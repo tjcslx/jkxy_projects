@@ -1,0 +1,1 @@
+项目通过FIS3构建，部署在Apache服务器上，运行前须将压缩包中的receiver.php文件复制到Apache的htdocs目录中，然后在phpMyAdmin中导入source.sql.zip包，建立数据库，最后运行``fis3 release``将构建后的文件导入到Apache的安装目录C:/Application/Work/xampp/htdocs/，如果安装目录不是这个，则需要修改；前端地址为[地址](http://localhost/)，后端地址为[地址](http://localhost/backend.php)。

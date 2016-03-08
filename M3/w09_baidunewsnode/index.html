@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>百度新闻</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.min.css">
+</head>
+
+<body>
+    <!--头部，PC版为百度图标、主菜单栏、搜索框及新闻栏目，手机版为百度图标及新闻栏目，图片使用base64转码-->
+    <header>
+        <div class="top">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARQAAABYCAYAAAA0nQjaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA4ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDE0IDc5LjE1Njc5NywgMjAxNC8wOC8yMC0wOTo1MzowMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo0ODVjNzQ5Yi1kOWFjLTQwMDMtOTQ5Yi0xOTc1MjMwNzRmNDkiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MERDRjNFMTE4NzdFMTFFNEFBMjE5ODc1QkJEODA1M0MiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MERDRjNFMTA4NzdFMTFFNEFBMjE5ODc1QkJEODA1M0MiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpiM2I5ZjBhNS1iYjE0LTQ3ZTAtYWYxMC1iMGIyZGUyMzM2NGQiIHN0UmVmOmRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDpiMTAzMTU1Mi1iNWZiLTExNzctYmMy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" alt="百度新闻" height="46" width="137">
+            <ul>
+                <li>
+                    <a href="#"><strong>新闻</strong></a>
+                </li>
+                <li>
+                    <a href="#">网页</a>
+                </li>
+                <li>
+                    <a href="#">贴吧</a>
+                </li>
+                <li>
+                    <a href="#">知道</a>
+                </li>
+                <li>
+                    <a href="#">音乐</a>
+                </li>
+                <li>
+                    <a href="#">图片</a>
+                </li>
+                <li>
+                    <a href="#">视频</a>
+                </li>
+                <li>
+                    <a href="#">地图</a>
+                </li>
+                <li>
+                    <a href="#">百科</a>
+                </li>
+                <li>
+                    <a href="#">文库</a>
+                </li>
+            </ul>
+            <div class="search">
+                <form action="" method="post">
+                    <input type="text">
+                    <input type="submit" value="百度一下">
+                </form>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li class="active">
+                    <a href="#">首页</a>
+                </li>
+                <li>
+                    <a href="#">百家</a>
+                </li>
+                <li>
+                    <a href="#">财经</a>
+                </li>
+                <li>
+                    <a href="#">娱乐</a>
+                </li>
+                <li>
+                    <a href="#">体育</a>
+                </li>
+                <li>
+                    <a href="#">互联网</a>
+                </li>
+                <li>
+                    <a href="#">时尚</a>
+                </li>
+                <li>
+                    <a href="#">汽车</a>
+                </li>
+                <li>
+                    <a href="#">传媒</a>
+                </li>
+                <li>
+                    <a href="#">个性推荐</a>
+                </li>
+                <li>
+                    <a href="#">国内</a>
+                </li>
+                <li>
+                    <a href="#">国际</a>
+                </li>
+                <li>
+                    <a href="#">军事</a>
+                </li>
+                <li>
+                    <a href="#">社会</a>
+                </li>
+                <li>
+                    <a href="#">房产</a>
+                </li>
+                <li>
+                    <a href="#">视频</a>
+                </li>
+                <li>
+                    <a href="#">名站</a>
+                </li>
+                <li>
+                    <a href="#">更多版块</a>
+                </li>
+                <li class="expand">
+                    ∨
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!--头部结束-->
+    <!--正文部分，包括滚动图、新闻标题及下方的更多按钮，PC版与手机版显示内容相同-->
+    <section class="index">
+        <div class="back"></div>
+        <div class="jcarousel-wrapper">
+            <div class="jcarousel">
+                <ul>
+                </ul>
+            </div>
+            <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+            <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+        </div>
+        <ul>
+        </ul>
+        <div class="more">
+            <button class="more">更多</button>
+        </div>
+        <div class="modal fade" id="newsmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <!--新闻标题-->
+                        <h4 class="modal-title" id="myModalLabel"></h4>
+                    </div>
+                    <div class="modal-body">
+                        <span class="id"></span>
+                        <span class="time"></span>
+                        <span class="origin"></span>
+                        <p></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" id="close">关闭</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--正文部分结束-->
+    <!--底部，PC版显示版权信息，手机版显示三个链接-->
+    <footer>
+        <span><a href="#">投诉中心</a>京公网安备110000000001号<a href="#">互联网新闻信息服务许可</a>©2015Baidu<a href="#">使用百度前必读</a></span>
+        <ul>
+            <li>
+                <a href="#">意见反馈</a>
+            </li>
+            <li>
+                <a href="#">应用推荐</a>
+            </li>
+            <li>
+                <a href="#">客户端</a>
+            </li>
+        </ul>
+    </footer>
+    <!--底部结束-->
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.jcarousel.min.js"></script>
+    <script src="js/jcarousel.basic.js"></script>
+    <script src="js/frontend.min.js"></script>
+</body>
+
+</html>

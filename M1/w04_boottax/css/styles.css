@@ -1,0 +1,100 @@
+/*General styles in two html documents, use neat.css' font-family setting to unify multiple platforms' font display.*/
+
+body,
+h1,
+p,
+button,
+input {
+    font-family: 'helvetica neue', tahoma, 'hiragino sans gb', stheiti, 'wenquanyi micro hei', \5FAE\8F6F\96C5\9ED1, \5B8B\4F53, sans-serif;
+}
+
+body {
+    background-color: rgb(238, 238, 238);
+}
+
+
+/*Styles of login.html document, use table display to make inputs and button center vertically.*/
+
+.login {
+    height: 343px;
+    display: table;
+}
+
+.login div {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#id {
+    margin-bottom: 10px;
+    width: 300px;
+}
+
+form input[type="password"] {
+    width: 300px;
+    margin-top: 10px;
+}
+
+#remember {
+    margin: 10px 0 5px 0;
+}
+
+#cert {
+    margin: 5px 0 10px 0;
+}
+
+
+/*Styles of index.html documents.*/
+
+span {
+    cursor: pointer;
+}
+
+
+/*Transition animation when menu items are hovered.*/
+
+.dashboard_menu ul li a:hover {
+    background-color: rgb(66, 139, 202);
+    color: rgb(255, 255, 255);
+    transition: 1s ease;
+    -webkit-transition: 1s ease;
+    -moz-transition: 1s ease;
+    -o-transition: 1s ease;
+}
+
+
+/*Align numeric contents right in cells, which others center.*/
+
+table thead tr th,
+tbody tr td {
+    text-align: center;
+}
+
+table tbody tr td:nth-child(6) {
+    text-align: right;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/*Transition animation when last columns of the table are hovered, and different colors will display, depending on different type.*/
+
+a[class^="a_"]:hover {
+    transition: 1s ease;
+    -webkit-transition: 1s ease;
+    -moz-transition: 1s ease;
+    -o-transition: 1s ease;
+}
+
+.a_info:hover {
+    color: rgb(49, 176, 213);
+}
+
+.a_warning:hover {
+    color: rgb(236, 151, 31);
+}
+
+.a_danger:hover {
+    color: rgb(201, 48, 44);
+}

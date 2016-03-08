@@ -1,0 +1,81 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+div[id^="div_box_"] {
+    width: 100px;
+    height: 100px;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.div_left {
+    width: 33%;
+    height: 100%;
+    float: left;
+    margin-left: -67%;
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+}
+
+.div_middle {
+    width: 34%;
+    height: 100%;
+    float: left;
+    margin-left: 33%;
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+}
+
+.div_right {
+    width: 33%;
+    height: 100%;
+    float: right;
+    margin-left: -33%;
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+}
+
+.div_left #div_box_side_left {
+    background-color: rgb(255, 0, 0);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-top: 50%;
+}
+
+#div_box_side_right {
+    background-color: rgb(0, 255, 0);
+}
+
+#div_box_side_top {
+    background-color: rgb(0, 0, 255);
+    margin: 10px 0;
+}
+
+#div_box_side_bottom {
+    background-color: rgb(255, 255, 0);
+    margin: 10px 0;
+}
+
+#div_box_center {
+    display: table;
+    text-align: center;
+    background-color: rgb(81, 117, 185);
+    margin: 10px 0;
+}
+
+
+/* Set left, right, top and bottom blocks' shadow, using attribute selector. */
+
+div[id^="div_box_side_"] {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+    -o-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+}
+
+#center_img {
+    display: table-cell;
+    vertical-align: middle;
+}

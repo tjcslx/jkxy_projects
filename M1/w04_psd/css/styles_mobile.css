@@ -1,0 +1,173 @@
+/*将所有页面元素进行正常化，参照neat.css设置文字字体，将div设置为怪异盒模型*/
+
+body,
+div,
+h1,
+h3 {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 62.5%;
+    font-family: font-family: 'helvetica neue', tahoma, 'hiragino sans gb', stheiti, 'wenquanyi micro hei', \5FAE\8F6F\96C5\9ED1, \5B8B\4F53, sans-serif;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+
+/*设置三个主要div的宽度为100%以利于缩放*/
+
+.intro,
+.os,
+.attention {
+    width: 100%;
+}
+
+
+/*利用linear-gradient函数设置上两个div的背景颜色变化*/
+
+.intro,
+.os {
+    background: -webkit-linear-gradient(left, rgb(205, 234, 254), rgb(167, 219, 253));
+    background: -moz-linear-gradient(left, rgb(205, 234, 254), rgb(167, 219, 253));
+    background: -o-linear-gradient(left, rgb(205, 234, 254), rgb(167, 219, 253));
+    background: linear-gradient(left, rgb(205, 234, 254), rgb(167, 219, 253));
+}
+
+
+/*设置第一个div及其元素的样式*/
+
+.intro {
+    height: 600px;
+}
+
+.intro h1,
+.intro div {
+    position: absolute;
+}
+
+.intro h1 {
+    top: 165px;
+    font-size: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+.intro .phone1 {
+    top: 248px;
+    left: 50%;
+    margin-left: -156px;
+    height: 634px;
+    width: 239px;
+    background: url("../img/mobile/iphone.png") top left no-repeat;
+    background-position: 0 0;
+}
+
+.intro .phone2 {
+    top: 255px;
+    left: 50%;
+    margin-left: 83px;
+    height: 334px;
+    width: 215px;
+    background: url("../img/mobile/android.png") top left no-repeat;
+    background-position: -142px 5px;
+}
+
+
+/*设置第二个div及其元素的样式*/
+
+.os {
+    height: 209px;
+    display: table;
+}
+
+.os div[class$="container"] {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.os div[class$="container"] h3 {
+    font-size: 18px;
+    margin-top: 8px;
+}
+
+
+/*将Fireworks导出的CSS Sprites文件进行调整*/
+
+#iphone,
+#android,
+#ipad,
+#apad {
+    margin: 0 auto;
+    width: 89px;
+    height: 89px;
+    background: url("../img/mobile/mobile_os.png") top left no-repeat;
+}
+
+#iphone:active,
+#android:active,
+#ipad:active,
+#apad:active {
+    transition: opacity 1s ease;
+    -webkit-transition: opacity 1s ease;
+    -moz-transition: opacity 1s ease;
+    opacity: 0.5;
+}
+
+#iphone {
+    background-position: -10px -10px;
+}
+
+#android {
+    background-position: -10px -109px;
+}
+
+#ipad {
+    background-position: -10px -208px;
+}
+
+#apad {
+    background-position: -10px -307px;
+}
+
+
+/*设置第三个div及其元素的样式*/
+
+.attention {
+    height: 300px;
+    background-color: rgb(224, 228, 223);
+}
+
+.attention p {
+    margin-left: 43px;
+    font-size: 24px;
+}
+
+.attention .tips {
+    margin: 43px 0 0 43px;
+    width: 153px;
+    height: 41px;
+    background-color: rgb(50, 165, 240);
+    color: rgb(255, 255, 255);
+    border-radius: 2px;
+    font-size: 25px;
+    border-style: none;
+}
+
+.attention .tips span {
+    display: inline-block;
+    transform: rotate(15deg);
+    -webkit-transform: rotate(-15deg);
+    -moz-transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+    -o-transform: rotate(-15deg);
+}
+
+.attention img {
+    display: block;
+    margin: 10px auto;
+}

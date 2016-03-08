@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>JavaScript简易计算器</title>
+</head>
+
+<body>
+    <h2>请输入两个参与计算的数字，选择算符并点击“计算”按钮得出计算结果。</h2>
+    <form>
+        <input type="text" id="num1" placeholder="数字1" tabindex="1" />
+        <select id="operator" tabindex="3">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <input type="text" id="num2" placeholder="数字2" tabindex="2" />
+        <input type="button" value="计算" onclick="calculate()" tabindex="4" />
+    </form>
+    <p id="result"></p>
+    <script src="app.js"></script>
+</body>
+
+</html>

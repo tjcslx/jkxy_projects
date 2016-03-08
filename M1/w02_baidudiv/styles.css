@@ -1,0 +1,91 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial;
+}
+
+header {
+    height: 76px;
+    width: 100%;
+    font-size: 12px;
+}
+
+header .header_menu_items {
+    padding: 12px;
+    float: right;
+}
+
+header .header_menu_items ul li {
+    display: inline;
+    padding: 4px 10px;
+}
+
+header .header_menu_items ul li:nth-child(8) {
+    display: inline;
+    padding: 4px 10px;
+    background-color: rgb(51, 136, 255);
+}
+
+header .header_menu_items ul li a {
+    color: rgb(0, 0, 0);
+}
+
+.a_more {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+header .header_menu_items ul li a:hover {
+    color: rgb(0, 0, 255);
+}
+
+.content {
+    height: 440px;
+    width: 100%;
+    text-align: center;
+}
+
+/*img[src="bd_logo1.png"] {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    margin: -5px 0 0 -135px;
+}
+
+input[type="text"] {
+    height: 30px;
+    width: 540px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    margin: -12px 0 0 -322px;
+    border-color: rgb(49, 126, 243);
+}
+
+input[type="button"] {
+    height: 36px;
+    width: 100px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    margin: -12px 0 0 222px;
+    background-color: rgb(49, 126, 243);
+    color: rgb(255, 255, 255);
+    border-style: none;
+    font-size: 15px;
+}*/
+
+footer {
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+}
+
+footer .footer_menu_items ul li {
+    display: inline;
+    padding: 6px;
+}
+
+footer .gray {
+    color: rgb(153, 153, 153);
+}

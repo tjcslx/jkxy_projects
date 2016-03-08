@@ -1,0 +1,76 @@
+html {
+    font-size: 62.5%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    overflow: auto;
+}
+
+body,
+header,
+section,
+footer {
+    padding: 0;
+    margin: 0;
+    -webkit-text-size-adjust: none;
+}
+
+body,
+input {
+    font-family: 'helvetica neue', 'tahoma', 'hiragino sans gb', 'stheiti', 'wenquanyi micro hei', '\5FAE\8F6F\96C5\9ED1', '\5B8B\4F53', sans-serif;
+}
+
+@keyframes ani {
+    0% {
+        transform: scaleY(1);
+    }
+    50% {
+        transform: scaleY(0.4);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+@-webkit-keyframes ani {
+    0% {
+        transform: scaleY(1);
+    }
+    50% {
+        transform: scaleY(0.4);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+@-moz-keyframes ani {
+    0% {
+        transform: scaleY(1);
+    }
+    50% {
+        transform: scaleY(0.4);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+.animation(@ani_name, @second) {
+    animation: @ani_name 1s ease-in @second infinite;
+    -webkit-animation: @ani_name 1s ease-in @second infinite;
+    -moz-animation: @ani_name 1s ease-in @second infinite;
+}
+
+.transition(@tran_name, @second) {
+    transition: @tran_name @second ease-in;
+    -webkit-transition: @tran_name @second ease-in;
+    -moz-transition: @tran_name @second ease-in;
+}
+
+.wrap {
+    text-wrap: wrap;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -o-pre-wrap;
+}

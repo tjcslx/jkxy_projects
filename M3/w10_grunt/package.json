@@ -1,0 +1,14 @@
+{
+  "name": "w10_grunt",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Xi Li",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "grunt": "^0.4.5"
+  }
+}

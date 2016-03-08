@@ -1,0 +1,179 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+.container {
+    position: relative;
+    margin: 50px auto;
+    background-color: #fff;
+    border-width: 0;
+    width: 500px;
+    height: 260px;
+}
+
+.container input {
+    width: 498px;
+    height: 48px;
+    font-size: 30px;
+    line-height: 50px;
+    border: 1px solid #efefef;
+    border-radius: 5px;
+    outline: none;
+    text-align: right;
+}
+
+.container div {
+    position: absolute;
+    width: 100px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#btn0,
+#btn1,
+#btn2,
+#btn3,
+#btn4,
+#btn5,
+#btn6,
+#btn7,
+#btn8,
+#btn9,
+#btn_dot,
+#btn_equals,
+#btn_del,
+#btn_plus,
+#btn_minus,
+#btn_multiply,
+#btn_divide {
+    background-color: #000;
+    color: #fff;
+}
+
+#btn_sin,
+#btn_cos,
+#btn_tan,
+#btn_log {
+    background-color: #40bd9e;
+    color: #000;
+}
+
+#btn0,
+#btn1,
+#btn2,
+#btn3,
+#btn4,
+#btn5,
+#btn6,
+#btn7,
+#btn8,
+#btn9,
+#btn_dot,
+#btn_equals,
+#btn_sin,
+#btn_cos,
+#btn_tan,
+#btn_log {
+    height: 50px;
+    line-height: 50px;
+}
+
+#btn_del,
+#btn_plus,
+#btn_minus,
+#btn_multiply,
+#btn_divide {
+    height: 40px;
+    line-height: 40px;
+}
+
+#btn7,
+#btn8,
+#btn9,
+#btn_del,
+#btn_sin {
+    top: 60px;
+}
+
+#btn4,
+#btn5,
+#btn6,
+#btn_cos {
+    top: 110px;
+}
+
+#btn1,
+#btn2,
+#btn3,
+#btn_tan {
+    top: 160px;
+}
+
+#btn_dot,
+#btn0,
+#btn_equals,
+#btn_log {
+    top: 210px;
+}
+
+#btn_divide {
+    top: 100px;
+}
+
+#btn_multiply {
+    top: 140px;
+}
+
+#btn_minus {
+    top: 180px;
+}
+
+#btn_plus {
+    top: 220px;
+}
+
+#btn7,
+#btn4,
+#btn1,
+#btn_dot {
+    left: 0;
+}
+
+#btn8,
+#btn5,
+#btn2,
+#btn0 {
+    left: 100px;
+}
+
+#btn9,
+#btn6,
+#btn3,
+#btn_equals {
+    left: 200px;
+}
+
+#btn_del,
+#btn_plus,
+#btn_minus,
+#btn_multiply,
+#btn_divide {
+    left: 300px;
+}
+
+#btn_sin,
+#btn_cos,
+#btn_tan,
+#btn_log {
+    left: 400px;
+}
+
+.container div:active {
+    background-color: #efefef;
+    transition: background-color 0.5s ease;
+    -webkit-transition: background-color 0.5s ease;
+    -moz-transition: background-color 0.5s ease;
+}

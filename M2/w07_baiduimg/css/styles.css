@@ -1,0 +1,123 @@
+body,
+ul,
+p {
+    margin: 0;
+    padding: 0;
+    font-family: 'microsoft yahei', 宋体, arial;
+}
+
+header {
+    height: 120px;
+}
+
+header img {
+    margin: 10px 40px;
+}
+
+header ul {
+    margin: -40px 0 0 170px;
+}
+
+header ul li {
+    padding: 0 5px;
+    font-size: 14px;
+}
+
+header ul li a {
+    color: #24579a;
+}
+
+header form {
+    margin-left: 40px;
+    margin-top: 15px;
+}
+
+header input[type="text"] {
+    width: 533px;
+    height: 30px;
+    font-size: 20px;
+    line-height: 20px;
+    padding-left: 5px;
+}
+
+header input[type="button"] {
+    width: 95px;
+    height: 36px;
+    font-size: 14px;
+}
+
+ul li {
+    display: inline-block;
+    list-style: none;
+}
+
+section {
+    height: 600px;
+}
+
+nav,
+.container {
+    margin: 0 auto;
+}
+
+nav {
+    background-color: #3f4351;
+    height: 40px;
+}
+
+nav ul li {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+nav ul li:hover {
+    background-color: #000;
+}
+
+nav ul li:nth-child(1) {
+    background-color: #e44636;
+}
+
+nav ul li a {
+    height: 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    line-height: 40px;
+}
+
+.box {
+    position: relative;
+    float: left;
+}
+
+.content {
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+.content img {
+    width: 200px;
+    height: auto;
+}
+
+.content p,
+.content span {
+    font-size: 12px;
+}
+
+.box .tag {
+    background-color: #e0e0e0;
+    display: inline-block;
+    padding: 2px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.lazyload {
+    display: none;
+}

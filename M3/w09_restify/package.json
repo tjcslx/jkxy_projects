@@ -1,0 +1,13 @@
+{
+    "name": "w09_restify",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+        "start": "node app.js"
+    },
+    "dependencies": {
+        "mysql": "~2.10.0",
+        "mysql-activerecord": "~0.8.6",
+        "restify": "~4.0.3"
+    }
+}

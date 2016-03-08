@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>JavaScript取字符串内出现最多的字符及其位置</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h2>输入需要查询的字符串，点击“查询”按钮查询出该字符串中显示次数最多的字符，及其出现的位置；若不输入任何字符，则默认的字符串为题目给定的axbdmakmpja；点击“对象查询”及“正则表达式查询”按钮，分别按两种方式进行查询。</h2>
+    <p>如果同时有两个以上字符出现的次数相同，则只能显示最后一个出现的字符，这个问题有待修改。</p>
+    <form method="post">
+        <input type="text" id="str" placeholder="请输入查询字符串，默认为axbdmakmpja" />
+        <input type="button" value="对象查询" onclick="stringCountObject()" />
+        <input type="button" value="正则表达式查询" onclick="stringCountRegExp()" />
+    </form>
+    <p id="result"></p>
+    <script src="app.js"></script>
+</body>
+
+</html>

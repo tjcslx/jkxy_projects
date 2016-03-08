@@ -1,0 +1,107 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial;
+    font-size: 24px;
+}
+
+
+/*设置最外层div容器perspective的透视属性*/
+
+.perspective {
+    -webkit-perspective: 400px;
+    -webkit-perspective-origin: 50% 100px;
+}
+
+
+/*设置cube容器的尺寸、边距及3D变换动画属性*/
+
+.cube {
+    position: relative;
+    margin: 100px auto;
+    height: 200px;
+    width: 200px;
+    -webkit-transform-style: preserve-3d;
+    -webkit-animation: spin 4s linear infinite;
+}
+
+
+/*设置魔方六个面的尺寸、边距及边框*/
+
+.side {
+    position: absolute;
+    height: 160px;
+    width: 160px;
+    padding: 19px;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+
+/*分别设置魔方六个面的背景颜色、文字颜色及3D变换，将其移至各自的位置*/
+
+.cube .A {
+    background-color: rgba(255, 0, 0, 0.7);
+    color: rgb(255, 255, 255);
+    -webkit-transform: rotateX(90deg) translateZ(100px);
+}
+
+.cube .B {
+    background-color: rgba(0, 255, 0, 0.7);
+    color: rgb(255, 255, 255);
+    -webkit-transform: translateZ(100px);
+}
+
+.cube .C {
+    background-color: rgba(0, 0, 255, 0.7);
+    color: rgb(255, 255, 255);
+    -webkit-transform: rotateY(90deg) translateZ(100px);
+}
+
+.cube .D {
+    background-color: rgba(255, 255, 0, 0.7);
+    -webkit-transform: rotateY(180deg) translateZ(100px);
+}
+
+.cube .E {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: rgb(255, 255, 255);
+    -webkit-transform: rotateY(-90deg) translateZ(100px);
+}
+
+.cube .F {
+    background-color: rgba(255, 255, 255, 0.7);
+    -webkit-transform: rotateX(-90deg) translateZ(100px) rotate(180deg);
+}
+
+
+/*设置魔方的3D变换动画效果*/
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotateX(0deg) rotateY(0deg);
+    }
+    12.5% {
+        -webkit-transform: rotateX(0deg) rotateY(-90deg);
+    }
+    25% {
+        -webkit-transform: rotateX(0deg) rotateY(-180deg);
+    }
+    37.5% {
+        -webkit-transform: rotateX(-90deg) rotateY(-180deg);
+    }
+    50% {
+        -webkit-transform: rotateX(-180deg) rotateY(-180deg);
+    }
+    62.5% {
+        -webkit-transform: rotateX(-180deg) rotateY(-90deg);
+    }
+    75% {
+        -webkit-transform: rotateX(-180deg) rotateY(0deg);
+    }
+    87.5% {
+        -webkit-transform: rotateX(-90deg) rotateY(0deg);
+    }
+    100% {
+        -webkit-transform: rotateX(0deg) rotateY(0deg);
+    }
+}

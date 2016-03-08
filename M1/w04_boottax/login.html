@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>天津地税网上税务局-登录</title>
+    <!-- Import Bootstrap 3.3.5 core css file -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Import project's css file -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <!-- Use grid layout to initiate login page, jumbotron on the left, while login form on the right. -->
+            <div class="col-md-8">
+                <!-- Jumbotron -->
+                <div class="jumbotron">
+                    <h1>天津地税网上税务局</h1>
+                    <p>通过网上税务局，纳税人可以进行法规查阅、政策咨询、信息变更、纳税申报、审批、备案申请等事项；除了浏览器版，还可以在PC客户端、手机、平板电脑、微信及支付宝客户端使用网上税务局。</p>
+                    <p><a href="#" role="button" class="btn btn-primary">了解更多</a></p>
+                </div>
+                <!-- End of jumbotron -->
+            </div>
+            <div class="col-md-4 login">
+                <!-- Login form -->
+                <div>
+                    <form action="index.html" method="post">
+                        <input type="text" class="form-control" id="id" placeholder="纳税人编号/手机号码/电子邮箱" required="required" autofocus="autofocus" />
+                        <input type="password" class="form-control" placeholder="密码" required="required" />
+                        <input type="checkbox" id="remember" /> 记住我
+                        <br/>
+                        <input type="checkbox" id="cert" /> CA证书登录
+                        <br/>
+                        <button type="submit" class="btn btn-primary">登录</button>
+                    </form>
+                </div>
+                <!-- End of login form -->
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+.header,
+.footer {
+    display: block;
+}
+
+.header {
+    height: 76px;
+    width: 100%;
+    font-size: 13px;
+}
+
+.header .pc {
+    padding-right: 12px;
+    margin: 19px 0 5px 0;
+}
+
+.header .pc li {
+    float: right;
+    margin-left: 20px;
+    padding: 4px 0;
+    display: block;
+}
+
+.header .pc li a {
+    color: rgb(0, 0, 0);
+}
+
+.a_more {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+#li_last {
+    background-color: rgb(51, 136, 255);
+    padding: 4px 4px;
+}
+
+.header .pc li a:hover {
+    color: rgb(0, 0, 255);
+}
+
+.header .mobile {
+    display: none;
+}
+
+.content {
+    height: 445px;
+    height: 390px\9;
+    +height: 405px;
+    width: 100%;
+    text-align: center;
+}
+
+#bdimg,
+#kw,
+#search {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#kw,
+#search {
+    margin-top: 30px;
+    margin-top: 5px\9;
+}
+
+#bdimg {
+    margin-top: -35px;
+    margin-top: 7px\9;
+}
+
+#kw {
+    position: absolute;
+    left: 50%;
+    margin-left: -320px;
+    height: 32px;
+    width: 540px;
+    border: 1px solid rgb(49, 126, 243);
+    outline: none;
+    font-size: 16px;
+}
+
+#search {
+    position: absolute;
+    left: 50%;
+    margin-left: 222px;
+    height: 36px;
+    width: 100px;
+    background-color: rgb(49, 126, 243);
+    color: rgb(255, 255, 255);
+    border-style: none;
+    font-size: 15px;
+}
+
+.menu_bar,
+.hotspot,
+.movies,
+.services {
+    display: none;
+}
+
+footer {
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+}
+
+footer .pc {
+    padding-bottom: 4px;
+    padding-bottom: 6px\0;
+}
+
+footer .pc ul {
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 0;
+}
+
+footer .pc ul li {
+    display: inline;
+    padding: 8px;
+}
+
+footer .gray {
+    color: rgb(102, 102, 102);
+}
+
+footer .mobile {
+    display: none;
+}

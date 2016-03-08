@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>天津地税网上税务局</title>
+    <!-- Import Bootstrap 3.3.5 core css file -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Import project's css file -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Navigation, put spotlight on the right, while items on the left. -->
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">天津地税网上税务局</a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-left">
+                    <li><a href="#">天津市XX有限公司</a></li>
+                    <li><a href="#" title="距离征期结束还有1天">征期日历</a></li>
+                    <li><a href="#">设置</a></li>
+                    <li><a href="#">退出</a></li>
+                </ul>
+                <form class="navbar-form navbar-right">
+                    <input type="text" class="form-control" placeholder="搜索……" />
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- End of navigation -->
+    <div class="container">
+        <div class="row">
+            <!-- Use grid layout to initiate login page, menu on the left, while main part on the right. -->
+            <div class="col-md-3 sidebar dashboard_menu">
+                <ul class="nav nav-sidebar">
+                    <li class="active"><a href="#">待办事项</a></li>
+                </ul>
+                <ul class="nav nav-sidebar">
+                    <li><a href="#">申报纳税</a></li>
+                    <li><a href="#">任务申请</a></li>
+                    <li><a href="#">影像上传</a></li>
+                    <li><a href="#">信息查询</a></li>
+                </ul>
+            </div>
+            <div class="col-md-9">
+                <!-- Main part, containing infomation table -->
+                <div class="table">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>业务类型</th>
+                                <th>操作日期</th>
+                                <th>属期起日</th>
+                                <th>属期止日</th>
+                                <th>税种</th>
+                                <th>税额/金额</th>
+                                <th>处理结果</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>营业税申报</td>
+                                <td>
+                                    <time datetime="2015-09-01">2015-09-01</time>
+                                </td>
+                                <td>
+                                    <time datetime="2015-08-01">2015-08-01</time>
+                                </td>
+                                <td>
+                                    <time datetime="2015-08-31">2015-08-31</time>
+                                </td>
+                                <td>营业税</td>
+                                <td>2000.00</td>
+                                <td>申报成功</td>
+                                <td>
+                                    <a href="#">查看</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>个人所得税申报</td>
+                                <td>
+                                    <time datetime="2015-09-06">2015-09-06</time>
+                                </td>
+                                <td>
+                                    <time datetime="2015-08-01">2015-08-01</time>
+                                </td>
+                                <td>
+                                    <time datetime="2015-08-31">2015-08-31</time>
+                                </td>
+                                <td>个人所得税</td>
+                                <td>5000.00</td>
+                                <td><span title="征期即将结束，请及时进行手工扣款或重新申报操作。">申报成功，扣款失败</span></td>
+                                <td>
+                                    <a href="#" class="a_danger">处理</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>印花税申报</td>
+                                <td>
+                                </td>
+                                <td>
+                                    <time datetime="2015-08-01">2015-08-01</time>
+                                </td>
+                                <td>
+                                    <time datetime="2015-08-31">2015-08-31</time>
+                                </td>
+                                <td>印花税</td>
+                                <td>0.00</td>
+                                <td><span title="征期即将结束，请及时进行申报。">未申报</span></td>
+                                <td>
+                                    <a href="#" class="a_danger">处理</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>残疾人就业保障金申报</td>
+                                <td>
+                                </td>
+                                <td>
+                                    <time datetime="2014-01-01">2014-01-01</time>
+                                </td>
+                                <td>
+                                    <time datetime="2014-12-31">2014-12-31</time>
+                                </td>
+                                <td>残疾人就业保障金</td>
+                                <td>1340.51</td>
+                                <td><span>未申报</span></td>
+                                <td>
+                                    <a href="#">处理</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>土地使用税减免税申请</td>
+                                <td>
+                                    <time datetime="2015-09-14">2015-09-14</time>
+                                </td>
+                                <td>
+                                    <time datetime="2015-07-01">2015-07-01</time>
+                                </td>
+                                <td>
+                                    <time datetime="2015-12-31">2015-12-31</time>
+                                </td>
+                                <td>城镇土地使用税</td>
+                                <td>0.00</td>
+                                <td><span title="税务机关已受理，可查看受理进度。">已受理</span></td>
+                                <td><a href="#" class="a_info">查看</a></td>
+                            </tr>
+                            <tr>
+                                <td>税务登记变更</td>
+                                <td>
+                                    <time datetime="2015-09-12">2015-09-12</time>
+                                </td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>0.00</td>
+                                <td><span title="上传影像资料不符合要求，请重新上传后再次提交。">已退回</span></td>
+                                <td><a href="#" class="a_warning">处理</a></td>
+                            </tr>
+                            <tr>
+                                <td>企业所得税减免税申请</td>
+                                <td>
+                                    <time datetime="2015-09-14">2015-09-14</time>
+                                </td>
+                                <td>
+                                    <time datetime="2015-01-01">2015-01-01</time>
+                                </td>
+                                <td>
+                                    <time datetime="2015-12-31">2015-12-31</time>
+                                </td>
+                                <td>企业所得税（预缴）</td>
+                                <td>0.00</td>
+                                <td><span title="请重新上传经办人身份证。">需补件</span></td>
+                                <td><a href="#" class="a_warning">处理</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- End of main part -->
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,179 @@
+@import "init";
+.container {
+    .hw(300px, 800px);
+    margin: 0 auto;
+    border: 1px solid #000;
+    //顶部样式
+    .container--top {
+        .hw(160px, 800px);
+        position: relative;
+        span {
+            position: absolute;
+            .hw(160px, 320px);
+            font-size: @fontsize + 12px;
+            line-height: 160px;
+            font-weight: 900;
+            top: 0;
+            box-sizing: border-box;
+            &:first-child {
+                left: 0;
+                padding-right: 10px;
+                text-align: right;
+            }
+            &:last-child {
+                right: 0;
+                padding-left: 10px;
+                text-align: left;
+            }
+        }
+        .container--top--logo {
+            display: inline-block;
+            .hw(160px, 160px);
+            top: 0;
+            left: 320px;
+            position: relative;
+            div {
+                position: absolute;
+                &.container--top--logo--bg {
+                    .hw(160px, 160px);
+                    top: 0;
+                    left: 0;
+                    background-color: #00f;
+                    border-radius: 100% 0 100% 100%;
+                }
+                &.container--top--logo--innercircle {
+                    .hw(80px, 80px);
+                    bottom: 12px;
+                    left: 12px;
+                    background-color: #fff;
+                    border-radius: 100% 0 100% 100%;
+                }
+                &.container--top--logo--trapezoid {
+                    .hw(0px, 60px);
+                    top: 0;
+                    right: 0;
+                    border-bottom: 80px solid #fff;
+                    border-left: 30px solid transparent;
+                    border-right-width: 0;
+                    z-index: 1;
+                }
+                &.container--top--logo--line {
+                    .hw(5px, 20px);
+                    top: 80px;
+                    right: 68px;
+                    background-color: #00f;
+                }
+                &.container--top--logo--red {
+                    .hw(40px, 40px);
+                    top: 20px;
+                    right: 20px;
+                    background-color: #f00;
+                    border-radius: 100%;
+                    z-index: 2;
+                }
+            }
+        }
+    }
+    //中部样式
+    .container--mid {
+        .reset;
+        .hw(50px, 800px);
+        background: linear-gradient(to right, #ff7600, #ff0, #ff7600);
+        position: relative;
+        span {
+            position: absolute;
+            top: 0;
+            text-align: center;
+            font-weight: 500;
+            &:nth-child(2),
+            &:nth-child(3) {
+                left: 100px;
+            }
+            &:nth-child(5),
+            &:nth-child(6) {
+                right: 200px;
+            }
+            &.container--mid__span--busnum {
+                left: 0;
+                .hw(50px, 100px);
+                font-size: @fontsize + 8px;
+                line-height: 50px;
+            }
+            &.container--mid__span--terminalname {
+                .hw(30px, 150px);
+                font-size: @fontsize + 4px;
+                line-height: 30px;
+            }
+            &.container--mid__span--time {
+                top: 30px;
+                .hw(20px, 150px);
+                font-size: @fontsize - 4px;
+                line-height: 20px;
+            }
+            &.container--mid__span--tips {
+                right: 0;
+                .hw(50px, 200px);
+                font-size: @fontsize;
+                line-height: 50px;
+            }
+        }
+        div {
+            display: inline-block;
+            position: absolute;
+            &.container--mid__div--arrow {
+                .hw(100px, 200px);
+                top: 0;
+                left: 250px;
+                div {
+                    background-color: #000;
+                    &.container--mid__div--arrow--tail {
+                        top: 20px;
+                        left: 50px;
+                        .hw(10px, 100px);
+                    }
+                    &.container--mid__div--arrow--triangle {
+                        top: 15px;
+                        left: 150px;
+                        .hw(0px, 0px);
+                        border-color: #ff0 #ff0 #ff0 #000;
+                        border-style: solid;
+                        border-width: 10px 0 10px 20px;
+                    }
+                }
+            }
+        }
+    }
+    //底部样式
+    .container--bottom {
+        .w(800px);
+        background-color: #1313ff;
+        ul {
+            .reset;
+            li {
+                .margin(10px, 0px, 0px, 0px);
+                list-style-type: none;
+                text-align: center;
+                font-size: @fontsize - 5px;
+                .hw(80px, 11px);
+                line-height: 11px;
+                color: #fff;
+                font-weight: 300;
+                &:first-child {
+                    .margin(0px, 0px, 0px, 24px);
+                }
+                &:last-child {
+                    .margin(0px, 24px, 0px, 0px);
+                }
+                &.container--bottom__li--active {
+                    color: #f00;
+                }
+                span {
+                    display: block;
+                    &:first-child {
+                        .margin(0px, 0px, 10px, 0px);
+                    }
+                }
+            }
+        }
+    }
+}

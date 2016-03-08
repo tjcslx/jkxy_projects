@@ -1,0 +1,394 @@
+/*全局样式设置*/
+
+html {
+    font-size: 62.5%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    overflow-y: scroll;
+}
+
+body,
+header {
+    padding: 0;
+    margin: 0;
+}
+
+body,
+input {
+    font-family: 'helvetica neue', tahoma, 'hiragino sans gb', stheiti, 'wenquanyi micro hei', \5FAE\8F6F\96C5\9ED1, \5B8B\4F53, sans-serif;
+}
+
+img {
+    border: 0 none;
+    height: auto;
+    max-width: 100%;
+    vertical-align: top;
+    -ms-interpolation-mode: bicubic;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    text-align: center;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+header,
+footer {
+    display: block;
+}
+
+
+/*头部样式设置*/
+
+header {
+    height: 32px;
+    width: 100%;
+    font-size: 13px;
+    border-bottom: 1px solid #ebebeb;
+}
+
+header ul {
+    margin: 0;
+}
+
+header ul li {
+    float: right;
+    height: 33px;
+    width: 56px;
+    line-height: 33px;
+    display: block;
+}
+
+header ul li a {
+    color: #000;
+    text-decoration: underline;
+}
+
+.a_more {
+    color: #fff;
+    text-decoration: none;
+}
+
+#li_last {
+    background-color: rgb(51, 136, 255);
+    padding: 0 10px;
+}
+
+#li_last a {
+    text-decoration: none;
+}
+
+header ul li a:hover {
+    color: rgb(0, 0, 255);
+}
+
+
+/*主体部分样式设置*/
+
+section {
+    height: 640px;
+    width: 100%;
+    text-align: center;
+}
+
+#bdimg,
+#kw,
+#search {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#kw,
+#search {
+    margin-top: 12px;
+    float: left;
+}
+
+#bdimg {
+    margin-top: 5px;
+}
+
+#kw {
+    position: absolute;
+    left: 50%;
+    margin-left: -320px;
+    height: 32px;
+    width: 535px;
+    border: 1px solid rgb(49, 126, 243);
+    outline: none;
+    font-size: 16px;
+    padding-left: 5px;
+}
+
+#search {
+    position: absolute;
+    left: 50%;
+    margin-left: 222px;
+    height: 36px;
+    width: 100px;
+    background-color: rgb(49, 126, 243);
+    color: rgb(255, 255, 255);
+    border-style: none;
+    font-size: 15px;
+}
+
+.side {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-left: 1px solid #ebebeb;
+    height: 100%;
+    width: 75px;
+    background-color: #f9f9f9;
+    display: none;
+}
+
+.side ul li {
+    height: 70px;
+}
+
+.side ul li:first-child {
+    height: 40px;
+}
+
+.side ul li a {
+    text-decoration: none;
+    color: #1b1b1b;
+}
+
+.side ul li a:hover {
+    text-decoration: underline;
+}
+
+.side ul li a span {
+    display: block;
+}
+
+.side ul li a span.img {
+    width: 36px;
+    height: 36px;
+    margin: 0 auto;
+}
+
+#img1 {
+    background: url('./music.png?__sprite');
+}
+
+#img2 {
+    background-image: url('./pic.png?__sprite');
+}
+
+#img3 {
+    background-image: url('./know.png?__sprite');
+}
+
+#img4 {
+    background-image: url('./wenku.png?__sprite');
+}
+
+#img5 {
+    background-image: url('./fyb.png?__sprite');
+}
+
+#img6 {
+    background-image: url('./tuiguang.png?__sprite');
+}
+
+
+/*推荐模块*/
+
+.recommend {
+    position: absolute;
+    top: 280px;
+    left: 50%;
+    margin-left: -433px;
+    width: 866px;
+    height: 370px;
+    border: 1px solid #ebebeb;
+    border-radius: 5px;
+    text-align: left;
+}
+
+
+/*推荐模块中的头部*/
+
+.recommend .rt {
+    height: 38px;
+    width: 100%;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ebebeb;
+    font-size: 14px;
+}
+
+.recommend .rt ul {
+    margin: 0;
+}
+
+.recommend .rt ul li {
+    display: inline-block;
+    width: 80px;
+    line-height: 38px;
+    margin-left: -4px;
+    transition: background-color 0.3s ease-in, color 0.3s ease-in;
+    -webkit-transition: background-color 0.3s ease-in, color 0.3s ease-in;
+    -moz-transition: background-color 0.3s ease-in, color 0.3s ease-in;
+    -o-transition: background-color 0.3s ease-in, color 0.3s ease-in;
+    -ms-transition: background-color 0.3s ease-in, color 0.3s ease-in;
+}
+
+.recommend .rt ul li:first-child {
+    width: 124px;
+    margin-left: 0;
+}
+
+.recommend .rt ul li:hover,
+.recommend .rt ul li.active {
+    color: #fff;
+}
+
+.recommend .rt ul li:hover {
+    background-color: #b3b6bb;
+}
+
+.recommend .rt ul li.active {
+    background-color: #9a9da2;
+    font-weight: bold;
+}
+
+
+/*推荐模块中的内容部分*/
+
+.recommend .rc .follow,
+.recommend .rc .rcs,
+.recommend .rc .navigation,
+.recommend .rc .video,
+.recommend .rc .shopping {
+    display: none;
+}
+
+.recommend .rc .active {
+    display: block;
+}
+
+.recommend .rc .follow {
+    line-height: 3;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.recommend .rc .follow span {
+    font-weight: bold;
+}
+
+.recommend .rc .rcs .rcslist {
+    margin: 0;
+}
+
+.recommend .rc .rcs .rcslist li {
+    text-align: left;
+    display: block;
+    height: 147px;
+    width: 100%;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.recommend .rc .rcs .rcslist li a h2 {
+    font-size: 18px;
+    color: #000;
+    margin: 15px 0 15px 15px;
+}
+
+.recommend .rc .rcs .rcslist li a span {
+    font-size: 14px;
+    color: #7f7f7f;
+    margin-left: 15px;
+}
+
+.recommend .rc .rcs .rcslist li a img {
+    float: right;
+    margin-right: 15px;
+}
+
+.recommend .rc .navigation .navc {
+    position: relative;
+    float: left;
+    margin: 9px;
+    background-color: #fcfcfc;
+}
+
+.recommend .rc .navigation .navc a img {
+    width: 126px;
+    height: 65px;
+}
+
+.recommend .rc .video .vc {
+    position: relative;
+    float: left;
+    margin: 10px;
+}
+
+.recommend .rc .video .vc p {
+    text-align: left;
+}
+
+.recommend .rc .video .vc p:nth-child(2) {
+    margin-bottom: 3px;
+}
+
+.recommend .rc .video .vc p:nth-child(3) {
+    color: #9a9da2;
+    margin-top: 3px;
+}
+
+.recommend .rc .shopping .sc img {
+    width: 202px;
+    height: 123px;
+}
+
+.recommend .rc .shopping .sc {
+    position: relative;
+    float: left;
+    padding: 7px 7px 0 7px;
+}
+
+.recommend .rc .shopping .sc p {
+    text-align: left;
+}
+
+.recommend .rc .shopping .sc p .price {
+    color: #f00;
+    display: inline-block;
+    float: right;
+}
+
+.recommend .rc .shopping .sc p .price:before {
+    content: "￥";
+}
+
+
+/*底部样式设置*/
+
+footer {
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+    padding-bottom: 4px;
+    color: #666666;
+}
+
+footer a {
+    color: #666666;
+    text-decoration: none;
+}
+
+footer a:first-child {
+    color: #0079f5;
+}
