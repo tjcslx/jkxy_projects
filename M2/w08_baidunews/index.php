@@ -9,11 +9,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <title>百度新闻</title>
     <!--引入Less预处理器，并利用媒体查询分别导入通用及适配PC端及移动端的Less源文件-->
-    <!-- <link rel="stylesheet/less" href="css/styles_common.less"> -->
-    <!-- <link rel="stylesheet/less" href="css/styles_pc.less" media="screen and (min-width: 415px)"> -->
-    <!-- <link rel="stylesheet/less" href="css/styles_mobile.less" media="screen and (max-width: 414px)"> -->
-    <!-- <link rel="stylesheet/less" href="css/styles.less"> -->
-    <!-- <script src="js/less.min.js"></script> -->
     <link rel="stylesheet" href="css/styles.min.css">
 </head>
 
@@ -187,7 +182,7 @@
         </ul>
     </footer>
     <!--底部结束-->
-    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/jquery.jcarousel.min.js"></script>
     <script src="js/jcarousel.basic.js"></script>
     <script src="js/frontend.js"></script>

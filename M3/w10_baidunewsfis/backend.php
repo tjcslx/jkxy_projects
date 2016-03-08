@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <title>百度新闻-后台管理</title>
     <!--导入Bootstrap 3.3.5的CSS样式-->
-    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="./styles.build.less">
 </head>
 
@@ -120,8 +120,8 @@
         </div>
     </div>
     <!--导入jQuery、Bootstrap及自带JavaScript文件-->
-    <script src="./jquery-1.11.3.min.js"></script>
-    <script src="./bootstrap.min.js"></script>
+    <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="./backend.build.js"></script>
 </body>
 

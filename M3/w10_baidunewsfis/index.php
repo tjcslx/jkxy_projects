@@ -181,7 +181,7 @@
         </ul>
     </footer>
     <!--底部结束-->
-    <script src="./jquery-1.11.3.min.js"></script>
+    <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
     <script src="./jquery.jcarousel.min.js"></script>
     <script src="./jcarousel.basic.build.js"></script>
     <script src="./frontend.build.js"></script>

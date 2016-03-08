@@ -108,7 +108,7 @@
         </ul>
     </footer>
     <!--底部结束-->
-    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/frontend.js"></script>
 </body>
 
